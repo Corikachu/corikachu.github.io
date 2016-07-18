@@ -1,0 +1,55 @@
+# Site settings
+title: Corikachu
+email: konomama0505@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  즐겁게 개발하며 배운 것을 풀어놓는 Corikachu 블로그
+baseurl: "" # the subpath of your site, e.g. /blog
+# url: "http://corikachu.github.io" # the base hostname & protocol for your site
+
+# Build settings
+timezone:          Asia/Seoul
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  enable_coderay: false
+
+
+owner:
+  name: Corikachu
+  avatar: avatar.jpg
+  job: ""
+  bio: "세상을 즐겁게 살고픈 소신있는 개발자"
+  email:
+  disqus-shortname: corikachu
+  twitter:
+  facebook: corikachu
+  google:
+    plus:
+    analytics: UA-80877473-1
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: corikachu
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: corikachu
+  xing:
+  instagram:
+  lastfm:
+  tumblr:
+  pinterest:
+  foursquare:
+  steam:
+  dribbble:
+  youtube:
+  soundcloud:
+  weibo:
+  flickr:
+  codepen:
