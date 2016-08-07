@@ -152,6 +152,9 @@ a.read-more {
   .feature-image {
     max-height: 300px;
   }
+  > img {
+    max-height: 300px;
+  }
 }
 
 // post image
