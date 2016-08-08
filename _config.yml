@@ -7,13 +7,17 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://corikachu.github.io" # the base hostname & protocol for your site
 gems:
   - jekyll-sitemap
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
 
 # Build settings
 timezone:          Asia/Seoul
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
+permalink:         /articles/:categories/:title
 
 kramdown:
   auto_ids:       true

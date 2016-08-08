@@ -3,7 +3,7 @@ layout: post
 title: "처음 참석하는 9X년생 개발자 모임 네 번째 만남 참석 후기"
 excerpt: "9X년생이 개발자가 모인 바로 그곳. 제가 직접 다녀와 보았습니다."
 date: 2016-08-07 23:00:00 +0900
-categories: [살아가면서]
+categories: [Life]
 modified: 2016-08-08
 comments: true
 image:
@@ -11,6 +11,8 @@ image:
   credit: histedit (양홍일)
   creditlink: https://www.facebook.com/histedit.1126
 tags: []
+redirect_from:
+  - /articles/2016-08/9xdeveloper-meetup-4th
 ---
 
 우연히 [9XD][9xd]를 알게 되어 관심을 가지고 있었습니다. 다른 곳에는 없는 '나이'라는 하나로 개발자들을 그룹으로 묶어서 오프라인 이벤트를 하고 네트워킹을 하는 모습이 신선하게 느껴졌습니다. 여러 개발자 행사를 다니면 생각보다 같은 또래를 만날 일이 없는데, 이렇게 같은 또래만 있는 이벤트가 신기했습니다. 그리고 우연히 모임을 주최하시는 [진유림][milooy]님이랑 페이스북에서 친구를 맺게 되고 잠깐 이야기하면서 참석을 결정하게 되었습니다. 

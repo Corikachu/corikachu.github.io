@@ -4,10 +4,12 @@ title: "[Android] Firebase의 Realtime Database로 간단한 채팅 앱 만들�
 excerpt: "Firebase의 Realtime Database로 채팅 어플리케이션을 만들어 봅시다."
 date: 2016-07-28 01:00:00 +0900
 categories: [android, firebase]
-modified: 2016-07-18 
+modified: 2016-08-08 
 comments: true
 image:
   feature: https://cloud.githubusercontent.com/assets/4270075/17187728/65dc1042-5475-11e6-8b48-8b8be027f6a4.png
+redirect_from:
+  - /articles/2016-07/android-firebase-realtime-chatting-app
 ---
 
 안드로이드 강의를 준비하면서 웹을 서핑하다 Firebase를 우연히 다시 보게 되었습니다. Google I/O 2016에서도 많이 강조되기도 한 Firebase는 개인적으로 예전 [채팅 SDK를 만드는 회사][sendbird]에 다닐때 채팅을 만들 수 있는 툴 중 하나로 알고만 있었는데요. 그때 Realtime database를 써보자 써보자 말만 해두고 막상 써본일이 없었는데 이번 기회에 채팅앱을 만들어 보자! 하면서 사용해 보았습니다.

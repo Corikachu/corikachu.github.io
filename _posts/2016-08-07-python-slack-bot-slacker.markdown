@@ -4,11 +4,13 @@ title: "[Python] Slacker를 이용한 Slack Bot 만들기"
 excerpt: "개발 커뮤니티 GDG SSU 내부 슬랙에서 운영하고 있는 봇이 어떻게 만들어 졌는지 간단하게 확인해 봅시다."
 date: 2016-08-07 18:00:00 +0900
 categories: [python]
-modified: 2016-08-07
+modified: 2016-08-08
 comments: true
 image:
   feature: https://cloud.githubusercontent.com/assets/4270075/17455501/6d6ed30e-5bf4-11e6-9f9b-85b50b1ee063.png
 tag: [python, slack, bot]
+redirect_from:
+  - /articles/2016-08/python-slack-bot-slacker
 ---
 
 제가 속해있는 Google Developer Groups Soongsil University(이하 GDG SSU)에서는 커뮤니케이션 툴로 [Slack][slack]을 사용 중입니다. 잡담, 개발, 질문&답변을 각기 다른 채널에서 이야기할 수 있고 코드 하이라이팅이 있어서 단순 메신져보다 코드 공유가 쉽다고 생각했기 때문입니다. 여러 가지 편의를 위한 봇을 만들 수 있다는 것 또한 슬랙의 큰 장점입니다. 전 회사에서는 데이터베이스를 조회해서 성장 지표를 뽑아내거나, unix timestamp 형식으로 돼 있는 시간을 읽을 수 있는 시간으로 바꿔주는 등 여러가지 기능으로 운영했었는데요. 저도 이를 살려서 GDG SSU에서 1일 1커밋을 장려하기 위한 'github 그래프 파싱 봇'과 '학교 공지 파싱 봇'을 운영 중입니다. python과 django를 쓰면서 슬랙 봇은 어떻게 만들어볼까 하며 생각하다가 [공식 API문서][api-docs-community]에 추천한 python 오픈 소프 라이브러리인 [Slacker][slacker]를 사용하기로 했습니다.
