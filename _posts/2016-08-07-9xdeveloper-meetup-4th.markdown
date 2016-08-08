@@ -5,6 +5,7 @@ excerpt: "9X년생이 개발자가 모인 바로 그곳. 제가 직접 다녀와
 date: 2016-08-07 23:00:00 +0900
 categories: [Life]
 modified: 2016-08-08
+last_modified_at: 2016-08-08
 comments: true
 image:
   feature: https://cloud.githubusercontent.com/assets/4270075/17461620/fb8c6a14-5ccd-11e6-830f-9b4b123c7ae6.png

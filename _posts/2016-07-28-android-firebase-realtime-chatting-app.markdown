@@ -5,6 +5,7 @@ excerpt: "Firebase의 Realtime Database로 채팅 어플리케이션을 만들�
 date: 2016-07-28 01:00:00 +0900
 categories: [android, firebase]
 modified: 2016-08-08 
+last_modified_at: 2016-08-08 
 comments: true
 image:
   feature: https://cloud.githubusercontent.com/assets/4270075/17187728/65dc1042-5475-11e6-8b48-8b8be027f6a4.png
