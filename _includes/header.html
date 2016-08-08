@@ -33,9 +33,9 @@
     "headline": "{% if page.title %}{{ page.title }} | {{site.title}}{% else %}{{ site.title }} | Blog{% endif %}",
     "image": {
         "@type": "ImageObject",
-        "url": "{% if (page.image.feature contains 'https') or (page.image.feature contains 'http') %}{{ page.image.feature }}{% else %}{{ site.url }}/img/avatar.jpg{% endif %} ",
-        "width": "{% if page.image.width %}{{ page.image.width }}{% else %}512{% endif %}",
-        "height": "{% if page.image.height %}{{ page.image.height }}{% else %}512{% endif %}",
+        "url": "{% if (page.image.feature contains 'https') or (page.image.feature contains 'http') %}{{ page.image.feature }}{% else %}{{ site.url }}/img/{{ author.avatar }}{% endif %} ",
+        "width": "{% if page.image.width %}{{ page.image.width }}{% else %}{{ author.avatar-width }}{% endif %}",
+        "height": "{% if page.image.height %}{{ page.image.height }}{% else %}{{ author.avatar-height }}{% endif %}"
     },
     "datePublished": "{{ page.date | date_to_xmlschema }}",
     "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
