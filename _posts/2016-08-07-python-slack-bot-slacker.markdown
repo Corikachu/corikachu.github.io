@@ -9,6 +9,8 @@ last_modified_at: 2016-08-08
 comments: true
 image:
   feature: https://cloud.githubusercontent.com/assets/4270075/17455501/6d6ed30e-5bf4-11e6-9f9b-85b50b1ee063.png
+  width: 400
+  height: 92
 tag: [python, slack, bot]
 redirect_from:
   - /articles/2016-08/python-slack-bot-slacker

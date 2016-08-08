@@ -11,6 +11,8 @@ image:
   feature: https://cloud.githubusercontent.com/assets/4270075/17461620/fb8c6a14-5ccd-11e6-830f-9b4b123c7ae6.png
   credit: histedit (양홍일)
   creditlink: https://www.facebook.com/histedit.1126
+  width: 1354
+  height: 300
 tags: []
 redirect_from:
   - /articles/2016-08/9xdeveloper-meetup-4th

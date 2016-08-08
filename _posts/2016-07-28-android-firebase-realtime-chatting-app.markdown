@@ -9,6 +9,8 @@ last_modified_at: 2016-08-08
 comments: true
 image:
   feature: https://cloud.githubusercontent.com/assets/4270075/17187728/65dc1042-5475-11e6-8b48-8b8be027f6a4.png
+  widht: 500
+  height: 256
 redirect_from:
   - /articles/2016-07/android-firebase-realtime-chatting-app
 ---

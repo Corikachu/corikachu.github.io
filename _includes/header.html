@@ -20,14 +20,28 @@
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
-    "@type": Article,
+    "@type": "Article",
     "name": "Corikachu",
-    "author": "Corikachu",
+    "author": {
+        "@type": "Person",
+        "name": "Corikachu"
+    },
+    "publisher": {
+        "@type": "Person",
+        "name": "Corikachu"
+    },
     "headline": "{% if page.title %}{{ page.title }} | {{site.title}}{% else %}{{ site.title }} | Blog{% endif %}",
-    "image": "{% if (page.image.feature contains 'https') or (page.image.feature contains 'http') %}{{ page.image.feature }}{% else %}{{ site.url }}/img/avatar.jpg{% endif %} ",
+    "image": {
+        "@type": "ImageObject",
+        "url": "{% if (page.image.feature contains 'https') or (page.image.feature contains 'http') %}{{ page.image.feature }}{% else %}{{ site.url }}/img/avatar.jpg{% endif %} ",
+        "width": "{% if page.image.width %}{{ page.image.width }}{% else %}512{% endif %}",
+        "height": "{% if page.image.height %}{{ page.image.height }}{% else %}512{% endif %}",
+    },
     "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
     "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_newlines }}{% endif %}",
     "url": "{{ site.url }}{{ page.url }}",
+    "mainEntityOfPage": "{{ site.url }}{{ page.url }}"
   }
   </script>
   {% endif %}
