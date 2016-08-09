@@ -16,12 +16,12 @@
   {% if page.url contains '/articles/'%}
   <meta property="article:author" content="http://facebook.com/corikachu" />
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
-
+  <meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}" />
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "name": "Corikachu",
+    "name": "{% if page.title %}{{ page.title }} | {{site.title}}{% else %}{{ site.title }} | Blog{% endif %}",
     "author": {
         "@type": "Person",
         "name": "Corikachu"
