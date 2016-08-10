@@ -180,7 +180,7 @@ DatabaseReference에 추가 할 수 있는 리스너는 두 종류가 있는데�
 onChildAdded를 수정해서 다른 클라이언트에서 데이터가 추가될때 chatData를 가져오게 합니다. `dataSnapshot.getValue(ChatData.class)`로 데이터를 가져올 수 있습니다. 그 다음 Adapter에 추가해서 listview에 보여지게 합니다.
 
 ## 시연
-![](https://cloud.githubusercontent.com/assets/4270075/17187712/5bf1c720-5475-11e6-9e89-71abdf654154.gif){: .center-image}
+![simulation-gif](https://cloud.githubusercontent.com/assets/4270075/17187712/5bf1c720-5475-11e6-9e89-71abdf654154.gif){: .center-image}
 Firebase 콘솔과 같이 확인해 봤습니다. send버튼을 누를때마다 `message`라는 `child`에서 새로운 데이터가 추가되는 것을 볼 수 있습니다. 각각의 데이터 안에는 userName과 message가 들어있는 모습입니다.
 
 ## 정리
