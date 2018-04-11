@@ -1,0 +1,144 @@
+---
+layout: resume
+title: Resume
+permalink: /resume/
+order: 1
+---
+
+
+<div class="row col">
+    <p>{{ site.data.resume.name }}</p>
+    <p>{{ site.data.resume.email }}</p>
+    <p>{{ site.data.resume.facebook }}</p>
+</div>
+
+<!-- INTRODUCE START -->
+<div id="introduce" class="col">
+    <div class="col m3 s12"><h2 class="left-category">Introduce</h2></div>
+    <div class="col m9 s12">
+        {% for row in site.data.resume.introduce %}
+            <p>{{ row }}</p>
+        {% endfor %}
+    </div>
+</div>
+<!-- INTRODUCE END -->
+
+<!-- EXPERIENCES START -->
+<div id="experiences" class="col">
+    <div class="row"><h2 class="left-category">Experience & Project</h2></div>
+    {% for experience in site.data.resume.experiences %}
+    <div class="row">
+        <div class="col m3 s12">
+            <p>{{ experience.title }}</p>
+            <p>{{ experience.position }}</p>
+            <p>{{ experience.period }}</p>
+        </div>
+
+        <div class="col m9 s12">
+            {% for project in experience.projects %}
+            <p>{{ project.name }}</p>
+            <p>{{ project.period }}</p>
+            <p>{{ project.desc }}</p>
+            {% endfor %}
+        </div>
+    </div>
+    {% if forloop.last == false %}
+    <hr class="resume hr">
+    {% endif %}
+    {% endfor %}
+</div>
+<!-- EXPERIENCES END -->
+
+<!-- LECTURES START -->
+<div id="lectures" class="col">
+    <div class="row"><h2 class="left-category">Lecture & Presentation</h2></div>
+    {% for lecture in site.data.resume.lectures %}
+    <div class="row">
+        <div class="col m3 s12">
+            <p>{{ lecture.period }}</p>
+        </div>
+
+        <div class="col m9 s12">
+            <p>{{ lecture.title }}</p>
+            <p>{{ lecture.location }}</p>
+        </div>
+
+    </div>
+    {% if forloop.last == false %}
+    <hr class="resume hr">
+    {% endif %}
+    {% endfor %}
+</div>
+<!-- LECTURES END -->
+
+<!-- ORGANIZATION START -->
+<div id="organizations" class="col">
+    <div class="row"><h2 class="left-category">Organization</h2></div>
+    {% for organization in site.data.resume.organizations %}
+    <div class="row">
+        <div class="col m3 s12">
+            <p>{{ organization.title }}</p>
+            <p>{{ organization.position }}</p>
+            <p>{{ organization.period }}</p>
+        </div>
+
+        <div class="col m9 s12">
+            {% for project in organization.projects %}
+            <p>{{ project.name }}</p>
+            <p>{{ project.period }}</p>
+            <p>{{ project.desc }}</p>
+            {% endfor %}
+        </div>
+    </div>
+    {% if forloop.last == false %}
+    <hr class="resume hr">
+    {% endif %}
+    {% endfor %}
+
+</div>
+<!-- ORGANIZATION END -->
+
+<!-- EDUCATION START -->
+<div id="educations" class="col">
+    <div class="row"><h2 class="left-category">Education</h2></div>
+    {% for education in site.data.resume.educations %}
+    <div class="row">
+        <div class="col m3 s12">
+            <p>{{ education.period }}</p>
+        </div>
+
+        <div class="col m9 s12">
+            <p>{{ education.title }}</p>
+            <p>{{ education.position }}</p>
+            <p>{{ education.desc }}</p>
+        </div>
+
+    </div>
+    {% if forloop.last == false %}
+    <hr class="resume hr">
+    {% endif %}
+    {% endfor %}
+</div>
+<!-- EDUCATION END -->
+
+<!-- ETC START -->
+<div id="etc" class="col">
+    <div class="row"><h2 class="left-category">ETC</h2></div>
+    {% for item in site.data.resume.etc %}
+    <div class="row">
+        <div class="col m3 s12">
+            <p>{{ item.period|to_string }}</p>
+        </div>
+
+        <div class="col m9 s12">
+            <p>{{ item.title }}</p>
+            <p>{{ item.desc }}</p>
+        </div>
+
+    </div>
+    {% if forloop.last == false %}
+    <hr class="resume hr">
+    {% endif %}
+    {% endfor %}
+</div>
+<!-- ETC END -->

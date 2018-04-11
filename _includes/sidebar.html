@@ -1,4 +1,5 @@
 {% if page.author %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %} {% endif %}
+{% assign sidebar_list = (site.pages | sort: 'order') %}
 
 <div class="cover-card table-cell table-middle">
   {% if author.avatar %}
@@ -10,7 +11,7 @@
   <nav class="nav">
     <ul class="nav-list">
       <span>-</span>
-      {% for page in site.pages %} {% if page.title %}
+      {% for page in sidebar_list %} {% if page.title %}
       <li class="nav-item">
         <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
         {% unless forloop.last %}<span>-</span>{% endunless %}

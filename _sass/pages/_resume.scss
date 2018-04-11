@@ -1,0 +1,24 @@
+.page-content.resume {
+  display: block;
+  .p {
+    margin: 0;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+  }
+}
+
+.left-category {
+  color: $secondary;
+  line-height: initial;
+  margin-top: -4px;
+}
+
+.resume.hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
