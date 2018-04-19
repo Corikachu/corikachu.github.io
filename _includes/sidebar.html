@@ -10,11 +10,10 @@
   <span class="author_bio mbm">{{ author.bio }}</span>
   <nav class="nav">
     <ul class="nav-list">
-      <span>-</span>
       {% for page in sidebar_list %} {% if page.title %}
       <li class="nav-item">
         <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
-        {% unless forloop.last %}<span>-</span>{% endunless %}
+        {% unless forloop.last %}<span>   </span>{% endunless %}
       </li>
       {% endif %} {% endfor %}
     </ul>

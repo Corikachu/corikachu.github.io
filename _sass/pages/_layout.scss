@@ -79,6 +79,8 @@
     zoom: 1;
     & a {
       margin-top: 1em;
+      margin-left: 0.2em;
+      margin-right: 0.2em;
       text-transform: lowercase;
       font-size: 85%;
       color: $secondary;
