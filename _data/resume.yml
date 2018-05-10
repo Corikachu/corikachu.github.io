@@ -10,7 +10,7 @@ experiences:
   - berryawesome:
     title: BerryAwesome
     position: 창업
-    period: 2016.04 ~ 2016.11
+    period: 2017.04 ~ 2017.11
     projects:
       - name: 소개팅 어플리케이션 Cooing 서버
         period: 2016.04 ~ 2016.11
@@ -44,13 +44,10 @@ experiences:
 lectures:
   - title: Python 프로그래밍
     location: 서울대학교, 숭실대학교(렉토피아)
-    period: 2017.08
+    period: 2017.08, 2018.05
   - title: Excel과 파이썬을 활용한 업무자동화
     location: Koscom
     period: 2017.05, 2017.08, 2017.10
-  - title: Python 프로그래밍
-    location: 숭실대학교 소모임 IsTeam
-    period: 2017.05
   - title: 학생 개발자로서 학생 넘어서기
     location: 대덕소프트웨어마이스터 고등학교
     period: 2016.09
