@@ -29,9 +29,9 @@ kramdown:
 
 owner:
   name: Corikachu
-  avatar: avatar.jpg
-  avatar-width: 512
-  avatar-height: 512
+  avatar: avatar.png
+  avatar-width: 300
+  avatar-height: 300
   job: "developer"
   bio: "세상을 즐겁게 살고픈 소신있는 개발자"
   email:
