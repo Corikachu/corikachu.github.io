@@ -6,15 +6,58 @@ introduce:
 - 세상을 즐겁게 살고픈 소신있는 개발자입니다. 채팅SDK 스타트업 SendBird에서 고객 데이터를 쉽게 확인할 수 있는 CRM 페이지와 안드로이드 SDK 기능이 모두 구현된 샘플 앱을 제작했습니다. 미래창조과학부 산하 인재육성사업인 SW Maestro에서 산모들을 위한 산후조리원 서비스에서 안드로이드와 백엔드을 맡아 개발하였습니다.
 - 혼자 성장하는 것이 아닌 같이 성장해 나가는 것을 더 좋아합니다. Google Developer Groups Soongsil Univ.에서 학생 개발자를 위해 지식을 나눌 수 있는 Hello, World 컨퍼런스나 Devcamp 행사를 주도적으로 개최했고 누적 천명이 넘는 사람을 모았습니다. 기업강의나 대학강의도 종종 나가고 있습니다.
 
+skills:
+  - backend:
+    title: Backend
+    skill-list:
+      - name: Python
+        score: 3
+      - name: Django
+        score: 3
+      - name: nginx
+        score: 2
+      - name: AWS
+        score: 2
+      - name: MySQL
+        score: 2
+      - name: PostgreSQL
+        score: 1
+      - name: PHP
+        score: 1
+  - frontend:
+    title: Frontend
+    skill-list:
+      - name: HTML/CSS
+        score: 2
+      - name: javascript
+        score: 2
+      - name:
+  - mobile:
+    title: Mobile
+    skill-list:
+      - name: Android
+        score: 2
+      - name: Java
+        score: 2
+  - other:
+    title: Others
+    skill-list:
+      - name: Mac OSX / Utuntu
+      - name: Git / Github
+      - name: Agile
+      - name: Atom / PyCharm
+      - name: G Suite / Slack
+      - name: Docker
+
 experiences:
   - berryawesome:
     title: BerryAwesome
-    position: 창업
-    period: 2017.04 ~ 2017.11
+    position: CEO / Software Developer
+    period: 2017.04 ~ 2017.12
     projects:
       - name: 소개팅 어플리케이션 Cooing 서버
-        period: 2016.04 ~ 2016.11
-        desc: 소개팅 어플리케이션의 사업 방향 제시 및 서비스 기획과 개발을 주도했습니다. nginx, django로 서버를 구성했으며 간단한 DB 모델링부터 API설계까지 담당했습니다.
+        period: 2016.04 ~ 2016.12
+        desc: 소개팅 어플리케이션의 사업 방향 제시 및 서비스 기획과 개발을 주도했습니다. nginx, django로 서버를 구성했으며 DB 모델링부터 API설계까지 담당했습니다.
   - sendbird:
     title: SendBird
     position: Associate Engineer
@@ -22,10 +65,10 @@ experiences:
     projects:
       - name: CRM Page
         period: 2015.09 ~ 2015.11
-        desc: 메인 서버와 분리된 CRM페이지를 Django로 구축했습니다. 연관성 있는 데이터들을 모아서 의미있는 데이터를 간단한 그래프와 함께 보여주는 웹페이지를 만들었습니다.
+        desc: 메인 서버와 분리된 CRM페이지를 python과 django로 구축했습니다. 연관성 있는 고객 데이터들을 모아서 정제하고 이를 그래프로 보여주는 웹페이지를 만들었습니다.
       - name: Android Sample App
         period: 2015.12 ~ 2016.03
-        desc: SendBird SDK 기능이 모두 구현된 어플리케이션을 제작했습니다. 1:1 채팅, 그룹채팅, 오픈채팅의 View를 머테리얼 디자인을 최대한 활용하면서 구현했습니다.
+        desc: 고객사 설명용으로 SendBird SDK 기능이 모두 구현된 안드로이드 어플리케이션을 제작했습니다. 1:1 채팅, 그룹채팅, 오픈채팅의 View를 머테리얼 디자인을 활용하여 구현했습니다.
   - maestro:
     title: Software Maestro
     position: 5th Mentee
@@ -33,7 +76,7 @@ experiences:
     projects:
       - name: 모두의 산후조리원
         period: 2014.12 ~ 2015.06
-        desc: 산모들을 위한 모두의 산후조리원 서비스 제작에서 서버 API와 안드로이드 어플리케이션을 담당했습니다. 필요한 API를 Restful하게 구성하고 이를 활용해 어플리케이션을 만들었습니다.
+        desc: 산모들을 위한 모두의 산후조리원 서비스 제작에서 서버 API와 안드로이드 어플리케이션을 담당했습니다. 필요한 API를 django로 Restful하게 구성하고 이를 활용해서 안드로이드 앱을 만들었습니다.
       - name: 스마트폰을 위한 SmartCover
         period: 2014.06 ~ 2014.11
         desc: 연인을 위한 스마트폰 마그네틱 센서를 이용한 스마트커버 어플리케이션 제작했습니다. 전반적인 안드로이드 구조를 담당하였으며 팀에서 안드로이드 스터디를 진행하며 기술 리더로서 활동했습니다.
@@ -44,7 +87,13 @@ experiences:
 lectures:
   - title: Python 프로그래밍
     location: 서울대학교, 숭실대학교(렉토피아)
-    period: 2017.08, 2018.05
+    period: 2017.08, 2018.05, 2018.06
+  - title: 금융혁신을 위한 IT전문가 양성 (파이썬을 활용한 금융데이터분석)
+    location: KB증권
+    period: 2018.06
+  - title: 프로그래밍 입문 with 파이썬
+    location: My Campus (전 Slow Campus)
+    period: 2018.04
   - title: Excel과 파이썬을 활용한 업무자동화
     location: Koscom
     period: 2017.05, 2017.08, 2017.10
@@ -52,18 +101,14 @@ lectures:
     location: 대덕소프트웨어마이스터 고등학교
     period: 2016.09
   - title: 마감시간을 가진 완벽주의자를 위한 Django
-    location: GDG DevCamp
-    period: 2016.08
-  - title: 마감시간을 가진 완벽주의자를 위한 Django
-    location: 중앙대학교 ZeroPage Conference
-    period: 2016.06
+    location: 중앙대학교 ZeroPage Conference, GDG DevCamp
+    period: 2016.06, 2016.08
   - title: Android Wear 개발 따라잡기
     location: Android Wear Hackaton
     period: 2015.01
   - title: Welcome to Android Studio
     location: GDG Android Conference
     period: 2014.12
-
 
 organizations:
   - gdgssu:
@@ -81,22 +126,22 @@ organizations:
         period: 2015.05
         desc: 전세계 개발자 행사인 Google I/O를 생중계하는 이벤트를 서울에서 진행했습니다. 개발자들끼리 자유롭게 이야기를 나눌 수 있는 네트워킹 시간을 마련하고 이벤트를 같이 즐길 수 있는 공간을 제공하였습니다.
   - null:
-    title: 컴퓨터학부 소모임 Null
+    title: 소모임 Null
     position: Leader
     period: 2014.02 ~ 2015.02
     projects:
       - name:
         period:
-        desc: Java와 Android를 함께 공부하기 위한 학부 소모임입니다. 안드로이드 스터디를 주도적으로 진행하였습니다.
+        desc: Java와 Android를 함께 공부하기 위한 컴퓨터학부 소모임입니다. 한학년 동안 운영을 맡아서 자바스터디와 안드로이드 스터디를 주도적으로 진행하였습니다.
 
 educations:
-  - title: 숭실대학교 휴학
+  - title: 숭실대학교 재학
     period: 2013.03 ~
     position: 컴퓨터학부
     desc: 운영체제, 문제해결, 데이터베이스, 소프트웨어공학, 데이터마이닝, 오토마타 수강
   - title: 경문고등학교 졸업
     period: 2009.03 ~ 2012.02
-    postion: 이과 / 서울시
+    position: 이과
     desc:
 
 etc:

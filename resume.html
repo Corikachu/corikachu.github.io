@@ -8,12 +8,14 @@ order: 1
 
 <div class="row col">
     <p>{{ site.data.resume.name }}</p>
-    <p>{{ site.data.resume.email }}</p>
-    <p>{{ site.data.resume.facebook }}</p>
+    <p><i class="fas fa-envelope" aria-hidden="true"></i>{{ site.data.resume.email }}</p>
+    <p><i class="fab fa-facebook" aria-hidden="true"></i>{{ site.data.resume.facebook }}</p>
+
+    <!--<p class="bg-alert">2018년 07월 30일 육군 정보보호특기병으로 입대해서 2020년 04월 29일 전역 예정입니다.<br>이 기간동안 메일을 통한 연락이 어려울 수 있습니다.</p>-->
 </div>
 
 <!-- INTRODUCE START -->
-<div id="introduce" class="col">
+<div id="introduce" class="col col-resume">
     <div class="col m3 s12"><h2 class="left-category">Introduce</h2></div>
     <div class="col m9 s12">
         {% for row in site.data.resume.introduce %}
@@ -24,21 +26,23 @@ order: 1
 <!-- INTRODUCE END -->
 
 <!-- EXPERIENCES START -->
-<div id="experiences" class="col">
+<div id="experiences" class="col col-resume">
     <div class="row"><h2 class="left-category">Experience & Project</h2></div>
     {% for experience in site.data.resume.experiences %}
     <div class="row">
         <div class="col m3 s12">
-            <p>{{ experience.title }}</p>
-            <p>{{ experience.position }}</p>
-            <p>{{ experience.period }}</p>
+            <p class="title">{{ experience.title }}</p>
+            <p class="position">{{ experience.position }}</p>
+            <p class="period">{{ experience.period }}</p>
         </div>
 
         <div class="col m9 s12">
             {% for project in experience.projects %}
-            <p>{{ project.name }}</p>
-            <p>{{ project.period }}</p>
-            <p>{{ project.desc }}</p>
+            <div class="row row-project">
+                <p class="project-name">{{ project.name }}</p>
+                <p class="project-period">{{ project.period }}</p>
+                <p class="project-desc">{{ project.desc }}</p>
+            </div>
             {% endfor %}
         </div>
     </div>
@@ -50,17 +54,17 @@ order: 1
 <!-- EXPERIENCES END -->
 
 <!-- LECTURES START -->
-<div id="lectures" class="col">
+<div id="lectures" class="col col-resume">
     <div class="row"><h2 class="left-category">Lecture & Presentation</h2></div>
     {% for lecture in site.data.resume.lectures %}
     <div class="row">
         <div class="col m3 s12">
-            <p>{{ lecture.period }}</p>
+            <p class="period">{{ lecture.period }}</p>
         </div>
 
         <div class="col m9 s12">
-            <p>{{ lecture.title }}</p>
-            <p>{{ lecture.location }}</p>
+            <p class="title">{{ lecture.title }}</p>
+            <p class="location">{{ lecture.location }}</p>
         </div>
 
     </div>
@@ -72,21 +76,21 @@ order: 1
 <!-- LECTURES END -->
 
 <!-- ORGANIZATION START -->
-<div id="organizations" class="col">
+<div id="organizations" class="col col-resume">
     <div class="row"><h2 class="left-category">Organization</h2></div>
     {% for organization in site.data.resume.organizations %}
     <div class="row">
         <div class="col m3 s12">
-            <p>{{ organization.title }}</p>
-            <p>{{ organization.position }}</p>
-            <p>{{ organization.period }}</p>
+            <p class="title">{{ organization.title }}</p>
+            <p class="position">{{ organization.position }}</p>
+            <p class="period">{{ organization.period }}</p>
         </div>
 
         <div class="col m9 s12">
             {% for project in organization.projects %}
-            <p>{{ project.name }}</p>
-            <p>{{ project.period }}</p>
-            <p>{{ project.desc }}</p>
+            <p class="project-name">{{ project.name }}</p>
+            <p class="project-period">{{ project.period }}</p>
+            <p class="project-desc">{{ project.desc }}</p>
             {% endfor %}
         </div>
     </div>
@@ -99,18 +103,18 @@ order: 1
 <!-- ORGANIZATION END -->
 
 <!-- EDUCATION START -->
-<div id="educations" class="col">
+<div id="educations" class="col col-resume">
     <div class="row"><h2 class="left-category">Education</h2></div>
     {% for education in site.data.resume.educations %}
     <div class="row">
         <div class="col m3 s12">
-            <p>{{ education.period }}</p>
+            <p class="period">{{ education.period }}</p>
         </div>
 
         <div class="col m9 s12">
-            <p>{{ education.title }}</p>
-            <p>{{ education.position }}</p>
-            <p>{{ education.desc }}</p>
+            <p class="title">{{ education.title }}</p>
+            <p class="position">{{ education.position }}</p>
+            <p class="desc">{{ education.desc }}</p>
         </div>
 
     </div>
@@ -122,17 +126,17 @@ order: 1
 <!-- EDUCATION END -->
 
 <!-- ETC START -->
-<div id="etc" class="col">
+<div id="etc" class="col col-resume">
     <div class="row"><h2 class="left-category">ETC</h2></div>
     {% for item in site.data.resume.etc %}
     <div class="row">
         <div class="col m3 s12">
-            <p>{{ item.period|to_string }}</p>
+            <p class="period">{{ item.period|to_string }}</p>
         </div>
 
         <div class="col m9 s12">
-            <p>{{ item.title }}</p>
-            <p>{{ item.desc }}</p>
+            <p class="title">{{ item.title }}</p>
+            <p class="desc">{{ item.desc }}</p>
         </div>
 
     </div>

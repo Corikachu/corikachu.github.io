@@ -1,10 +1,13 @@
+
 .page-content.resume {
   display: block;
-  .p {
+  p {
     margin: 0;
     display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 1.8em;
+    //-webkit-margin-before: 1em;
+    //-webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
   }
@@ -14,6 +17,7 @@
   color: $secondary;
   line-height: initial;
   margin-top: -4px;
+
 }
 
 .resume.hr {
@@ -21,4 +25,118 @@
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.bg-alert {
+  background-color: #f2dede;
+  padding: 15px;
+  margin: 1em 1em;
+  border-radius: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.col.col-resume {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.row.row-project {
+  margin-bottom: 1.5em;
+}
+
+// introduce
+#introduce p {
+  margin-bottom: 0.5em;
+}
+
+// experience
+#experiences p.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#experiences p.period {
+  font-style: italic;
+  color: $slategray;
+}
+
+#experiences p.project-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+#experiences p.project-period {
+  font-style: italic;
+  color: $slategray;
+  margin-top: 1px;
+}
+
+// lecture
+#lectures p.period {
+  //font-style: italic;
+  color: $slategray;
+  font-size: 1.2rem;
+}
+
+#lectures p.title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#lecture p.location {
+  font-style: italic;
+}
+
+//organizations
+#organizations p.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#organizations p.period {
+  font-style: italic;
+  color: $slategray;
+}
+
+#organizations p.project-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+#organizations p.project-period {
+  font-style: italic;
+  color: $slategray;
+  margin-top: 1px;
+}
+
+//educations
+#educations p.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+#educations p.period {
+  color: $slategray;
+  font-size: 1.2rem;
+}
+
+#educations p.position {
+  font-style: italic;
+  color: $slategray;
+  margin-top: 1px;
+}
+
+//etcs
+#etc p.period {
+  color: $slategray;
+  font-size: 1.2rem;
+}
+
+#etc p.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 2px;
 }
